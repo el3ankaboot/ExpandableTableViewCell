@@ -20,9 +20,12 @@ class PartnerExpandableTableViewCell: UITableViewCell {
     @IBOutlet weak var btnUpArrow: UIButton!
     @IBOutlet weak var constraintLblDetailsHeight: NSLayoutConstraint!
     
-    //MARK:- Instance variable
+    //MARK:- Instance variables
     var delegate : ExpandableCellDelegate?
     var partner: Partner?
+    
+    //MARK:- Static variables
+    static var cellsHeights : [CGFloat] = []
     
     //MARK:- Life Cycle
     override func awakeFromNib() {
@@ -49,8 +52,9 @@ class PartnerExpandableTableViewCell: UITableViewCell {
         var expectedLabelSize: CGSize = lblDetails.sizeThatFits(maximumLabelSize)
         var newFrame: CGRect = lblDetails.frame
         newFrame.size.height = expectedLabelSize.height
-        constraintLblDetailsHeight.constant = (expectedLabelSize.height)
+        constraintLblDetailsHeight.constant = expectedLabelSize.height
         lblDetails.frame = newFrame
+        PartnerExpandableTableViewCell.cellsHeights.append(expectedLabelSize.height)
     }
     
     //MARK:- show/hide down arrow
@@ -75,4 +79,5 @@ class PartnerExpandableTableViewCell: UITableViewCell {
 protocol ExpandableCellDelegate {
     func subscribe(partnerId: String)
 }
+
 

@@ -123,7 +123,6 @@
                     <constraint firstAttribute="trailing" secondItem="y3x-Xq-Whd" secondAttribute="trailing" id="D6k-JM-L4u"/>
                     <constraint firstItem="mag-kc-hJm" firstAttribute="leading" secondItem="seK-59-Xto" secondAttribute="leading" constant="8" id="HOv-CC-xAH"/>
                     <constraint firstItem="y3x-Xq-Whd" firstAttribute="top" secondItem="seK-59-Xto" secondAttribute="top" id="Im7-kX-8nx"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mag-kc-hJm" secondAttribute="bottom" priority="999" constant="8" id="ZQq-P1-2q7"/>
                     <constraint firstAttribute="bottom" secondItem="y3x-Xq-Whd" secondAttribute="bottom" priority="999" id="b3L-Nm-VYH"/>
                     <constraint firstItem="GFI-GG-4bH" firstAttribute="centerX" secondItem="seK-59-Xto" secondAttribute="centerX" id="hiy-QB-wCg"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mag-kc-hJm" secondAttribute="trailing" constant="8" id="sxd-gB-72K"/>
